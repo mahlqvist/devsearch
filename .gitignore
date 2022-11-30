@@ -7,7 +7,8 @@ db.sqlite3
 media
 
 # Backup files # 
-*.bak 
+*.bak
+z_test.*
 
 # Python # 
 *.py[cod] 

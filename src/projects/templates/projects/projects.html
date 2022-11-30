@@ -1,0 +1,13 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h1>The Projects Template</h1>
+<br>
+{% for project in projects %}
+<ul>
+    <li><a href="{% url 'project' project.id %}">{{ project.title }}</a></li>
+</ul>
+{% endfor %}
+<br>
+<h3>You entered: {{ time }}</h3>
+{% endblock %}
